@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills test</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <title>Skills test</title>
+</head>
+<body>
+
+    <style>
+    nav {
+        background-color: #5D4037;
+        padding: 15px;
+        text-align: center;
+        border-radius: 8px;
+    }
+
+    nav a {
+        color: #F5E6D3;
+        text-decoration: none;
+        padding: 10px 18px;
+        margin: 0 5px;
+        font-size: 16px;
+        font-weight: bold;
+        display: inline-block;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        background-color: #8D6E63;
+        color: white;
+        border-radius: 5px;
+    }
+
+    nav a.active {
+        background-color: #A1887F;
+        color: white;
+        border-radius: 5px;
+    }
+</style>
+
+    <nav>
+    <a href="index.html" >Homepage</a>
+    <a href="elchecker.html" class="active">Element Checker</a>
+    <a href="club_checker.html">Club Members</a>
+    <a href="meet_the_creator.html">Meet the Creator</a>
+</nav>
+
+<div id="div1" style="
+    color: #4E342E;
+    font-size: 25px;
+    background-color: #D7CCC8;
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 700px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+">
+
+
+    <center>
+    <h1>Type a non-metal Element from the Periodic Table</h1>
+<form>
+        <input type="text" id="dictionary" placeholder="Enter a non-metal Elemnent">
+        <input type="button" py-click="non_metal_value" value="Search">
+    </form>
+    <div id="result"></div>
+
+
+
+    <py-script src="main2.py"></py-script>
+</body></center>
+</html>
